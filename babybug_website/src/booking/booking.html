@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Babybug Express LLC</title>
+    <link rel="stylesheet" href="booking.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&family=Zilla+Slab:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Babybug Express LLC</h1>
+    <h3>Book a shipment</h3>
+
+    <form>
+      <div class="servicePurposeField">
+        <p>Are you a company or a person?</p>
+        <div class="servicePurposeOptions">
+          <div>
+            <input
+              type="radio"
+              id="servicePurpose1"
+              name="servicePurpose"
+              value="company"
+            />
+            <label for="servicePurpose1">Company</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="servicePurpose2"
+              name="servicePurpose"
+              value="person"
+            />
+            <label for="servicePurpose2">Person</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="fullNameField">
+        <label for="fullName">Full Name</label>
+        <div>
+          <input
+            type="text"
+            id="fullName"
+            placeholder="enter your first name"
+          />
+          <input type="text" id="fullName" placeholder="enter your last name" />
+        </div>
+      </div>
+
+      <div class="emailField">
+        <label for="emailFrom">Email Address</label>
+        <input type="email" id="emailFrom" placeholder="example@example.com" />
+      </div>
+
+      <div class="phoneField">
+        <label for="phoneForm">Phone Number</label>
+        <input
+          type="tel"
+          id="phoneForm"
+          placeholder="enter your phone number"
+        />
+      </div>
+
+      <div class="bookingDateField">
+        <label for="checkInDate">Check-in</label>
+        <input type="date" id="checkInDate" />
+      </div>
+
+      <div class="serviceTypeField">
+        <label for="serviceType">Service Type</label>
+        <select id="serviceType">
+          <option value="Dry Van">Dry Van</option>
+          <option value="Door to Door Service">Door to Door Service</option>
+          <option value="Driver Assist at Loading and Unloading">
+            Driver Assist at Loading and Unloading
+          </option>
+          <option value="Expedited">Expedited</option>
+          <option
+            value="Hauling of Enclosed Exotic, Antique and Classic Loads with Professional Care"
+          >
+            Hauling of Enclosed Exotic, Antique and Classic Loads with
+            Professional Care
+          </option>
+          <option value="Hauling of Furnitures and Heavy Equipments">
+            Hauling of Furnitures and Heavy Equipments
+          </option>
+          <option value="Special (High Value, Hazmat, Tanker Endorsed)">
+            Special (High Value, Hazmat, Tanker Endorsed)
+          </option>
+          <option value="Trailer Pools">Trailer Pools</option>
+          <option value="White Glove Service">White Glove Service</option>
+        </select>
+      </div>
+
+      <div class="detailsField">
+        <label for="detailssField"
+          >Shipment <br />
+          Details</label
+        >
+        <textarea id="detailsField"></textarea>
+      </div>
+
+      <a href="../../public/index.html" class="btn rounded-pill">Book now</a>
+    </form>
+  </body>
+  <script src="booking.js"></script>
+</html>

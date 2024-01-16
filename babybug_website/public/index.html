@@ -26,7 +26,7 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark py-3">
+      <nav class="navbar navbar-expand-lg navbar-dark py-2">
         <div class="container">
           <div class="contactInfo">
             <a href="#" class="contact">(706) 452-1324</a>
@@ -57,12 +57,16 @@
                 <a href="#services" class="nav-link">Services</a>
               </li>
 
-              <li class="nav-item" id="contactInfoSectionMenu">
-                <a href="#contactInfo" class="nav-link">Contact Info</a>
+              <li class="nav-item">
+                <a href="#quotesForm" class="nav-link">Quotes Request Form</a>
               </li>
 
               <li class="nav-item">
-                <a href="#reportsForm" class="nav-link">Reports Form</a>
+                <a href="#faqs" class="nav-link">FAQs</a>
+              </li>
+
+              <li class="nav-item" id="contactInfoSectionMenu">
+                <a href="#contactInfo" class="nav-link">Contact Info</a>
               </li>
             </ul>
           </div>
@@ -79,11 +83,13 @@
             up-to-the-minute tracking and delivery predictions?
           </p>
           <p>We can help!</p>
-          <a href="#about" class="btn rounded-pill"></a>
+          <a href="../src/booking/booking.html" class="btn rounded-pill"
+            >book a shipment</a
+          >
         </div>
       </section>
 
-      <section class="aboutSection">
+      <section class="aboutSection" id="about">
         <div class="container">
           <div
             class="d-md-flex justify-content-between align-items-center aboutSectionContent"
@@ -118,191 +124,281 @@
         </div>
       </section>
 
-      <section class="p-5" id="faq">
+      <section class="servicesSection" id="services">
+        <img
+          src="/babybug_website/src/assets/img/moving_boxes.jpg"
+          class="img1 img-fluid d-block w-20 rounded"
+          alt="..."
+        />
+
+        <div class="servicesContainer">
+          <h2 class="servicesTittle text-center">Our Services</h2>
+
+          <div class="row g-5 justify-content-center">
+            <div class="col-md-6 col-lg-3">
+              <div class="card bg-dark bg-opacity-63" id="generalFac">
+                <ul class="card-text">
+                  <li>Dry Van</li>
+                  <li>Door to Door Service</li>
+                  <li>Driver Assist at Loading and Unloading</li>
+                  <li>Expedited</li>
+                  <li>
+                    Hauling of Enclosed Exotic, Antique and Classic Loads with
+                    Professional Care
+                  </li>
+                  <li>Hauling of Furnitures and Heavy Equipments</li>
+                  <li>Special (High Value, Hazmat, Tanker Endorsed)</li>
+                  <li>Trailer Pools</li>
+                  <li>
+                    White Glove Service (provided to all of our customers)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="/babybug_website/src/assets/img/shipment_handing.jpg"
+          class="img2 img-fluid d-block w-20 rounded"
+          alt="..."
+        />
+      </section>
+
+      <section class="p-5" id="faqs">
         <h2 class="text-center my-5">FAQs</h2>
         <div class="accordion" id="accordionExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
               <button
-                class="accordion-button bg-dark text-light"
+                class="accordion-button"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseOne"
                 aria-expanded="true"
                 aria-controls="collapseOne"
               >
-                What are the rates for each type of room?
+                What would the costs for your logistics services be?
               </button>
             </h2>
             <div
               id="collapseOne"
-              class="accordion-collapse collapse show text-light text-center"
+              class="accordion-collapse collapse show text-center"
               aria-labelledby="headingOne"
               data-bs-parent="#accordionExample"
             >
-              <p class="accordion-body">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
-                cupiditate odio quia voluptatibus nemo sed corrupti consequatur
-                illum officia obcaecati! Iste consequatur maiores sapiente quam.
+              <p class="accordion-body my-0">
+                The prices are influenced by the following factors: type of
+                service, location, distance, weight and dimentions.
               </p>
             </div>
           </div>
 
-          <div class="accordion-item bg-dark">
+          <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
               <button
-                class="accordion-button collapsed bg-dark text-light"
+                class="accordion-button collapsed text-dark"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseTwo"
                 aria-expanded="false"
                 aria-controls="collapseTwo"
               >
-                Is there coffee provided in each guest room?
+                Do you offer international shipping services?
               </button>
             </h2>
             <div
               id="collapseTwo"
-              class="accordion-collapse collapse text-light text-center"
+              class="accordion-collapse collapse text-dark text-center"
               aria-labelledby="headingTwo"
               data-bs-parent="#accordionExample"
             >
-              <p class="accordion-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Doloremque in non odio fugiat iure vel.
+              <p class="accordion-body my-0">
+                No, we offer shipping services only across all 48 States.
               </p>
             </div>
           </div>
 
-          <div class="accordion-item bg-dark">
+          <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
               <button
-                class="accordion-button collapsed bg-dark text-light"
+                class="accordion-button collapsed text-dark"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseThree"
                 aria-expanded="false"
                 aria-controls="collapseThree"
               >
-                What special menu items do you offer for guests with dietary
-                restrictions?
+                How can I track my shipment?
               </button>
             </h2>
             <div
               id="collapseThree"
-              class="accordion-collapse collapse text-light text-center"
+              class="accordion-collapse collapse text-dark text-center"
               aria-labelledby="headingThree"
               data-bs-parent="#accordionExample"
             >
-              <p class="accordion-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Pariatur corrupti quis quas repellendus deserunt dolorum
-                cupiditate, repudiandae dolore rem aut magnam porro architecto
-                commodi id recusandae eveniet aliquid magni. Blanditiis, labore
-                repellendus!
+              <p class="accordion-body my-0">
+                You can easily track your shipment by directly contacting the
+                driver or using any of our tracking systems.
               </p>
             </div>
           </div>
 
-          <div class="accordion-item bg-dark">
+          <div class="accordion-item">
             <h2 class="accordion-header" id="headingFour">
               <button
-                class="accordion-button collapsed bg-dark text-light"
+                class="accordion-button collapsed text-dark"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseFour"
                 aria-expanded="false"
                 aria-controls="collapseFour"
               >
-                What is the cancellation policy?
+                What is the estimated delivery time for my shipment?
               </button>
             </h2>
             <div
               id="collapseFour"
-              class="accordion-collapse collapse text-light text-center"
+              class="accordion-collapse collapse text-dark text-center"
               aria-labelledby="headingFour"
               data-bs-parent="#accordionExample"
             >
-              <p class="accordion-body">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint a
-                dicta natus odit voluptas culpa modi maxime officia numquam quam
-                sapiente explicabo, enim officiis doloribus facilis sunt
-                voluptatem nisi nobis odio quidem quos molestias totam neque.
-                Cupiditate iste laboriosam quos suscipit facilis?
-                Necessitatibus?
+              <p class="accordion-body my-0">
+                The estimated delivery time depands on the type of the service
+                you have chosen. Please contact our customer service for
+                specific details on your shipment.
               </p>
             </div>
           </div>
 
-          <div class="accordion-item bg-dark">
+          <div class="accordion-item">
             <h2 class="accordion-header" id="headingFive">
               <button
-                class="accordion-button collapsed bg-dark text-light"
+                class="accordion-button collapsed text-dark"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseFive"
                 aria-expanded="false"
                 aria-controls="collapseFive"
               >
-                I'm arriving on Santorini Island by ferry. How will my luggage
-                get to the hotel?
+                Can I modify or cancel my shipment after it has been booked?
               </button>
             </h2>
             <div
               id="collapseFive"
-              class="accordion-collapse collapse text-light text-center"
+              class="accordion-collapse collapse text-dark text-center"
               aria-labelledby="headingFive"
               data-bs-parent="#accordionExample"
             >
-              <p class="accordion-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Suscipit nemo expedita natus facere minima a exercitationem est
-                autem explicabo. Quidem molestiae aut dolor, nostrum ab dolores
-                voluptatem veritatis.
-              </p>
-
-              <p class="accordion-body">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
-                nihil odit esse atque officia tempore voluptatum quos
-                exercitationem ab ea dolore quia adipisci earum, quidem quasi
-                non ipsa animi? Accusamus culpa nobis qui. Necessitatibus error
-                maxime quia similique inventore iure.
+              <p class="accordion-body my-0">
+                Modifications or cancellations may be possible depending on the
+                stage of your shipment. Please contact our customer service as
+                soon as possible at customersupport247@babybugexpressllc.com or
+                (706) 452-1324 for assistance.
               </p>
             </div>
           </div>
 
-          <div class="accordion-item bg-dark">
+          <div class="accordion-item">
             <h2 class="accordion-header" id="headingSix">
               <button
-                class="accordion-button collapsed bg-dark text-light"
+                class="accordion-button collapsed text-dark"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseSix"
                 aria-expanded="false"
                 aria-controls="collapseSix"
               >
-                Can I make a reservation for the hotel's restaurant if I'm not a
-                hotel guest?
+                What safety measures do you have in place for transporting
+                sensitive or fragile items?
               </button>
             </h2>
             <div
               id="collapseSix"
-              class="accordion-collapse collapse text-light text-center"
+              class="accordion-collapse collapse text-dark text-center"
               aria-labelledby="headingSix"
               data-bs-parent="#accordionExample"
             >
-              <p class="accordion-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-                provident delectus dolor, at, aliquam atque quaerat perferendis
-                accusantium laboriosam distinctio placeat eos rem repellat quae
-                doloremque recusandae non.
+              <p class="accordion-body my-0">
+                We have robust safety protocols in place to ensure the secure
+                transportation of sensitive or fragile items. Our team is
+                trained to handle such shipments with the utmost care, and we
+                use straps and blankets in securing the load.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSeven">
+              <button
+                class="accordion-button collapsed text-dark"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSeven"
+                aria-expanded="false"
+                aria-controls="collapseSeven"
+              >
+                How do I report a lost or damaged shipment?
+              </button>
+            </h2>
+            <div
+              id="collapseSeven"
+              class="accordion-collapse collapse text-dark text-center"
+              aria-labelledby="headingSeven"
+              data-bs-parent="#accordionExample"
+            >
+              <p class="accordion-body my-0">
+                In the unfortunate event of a lost or a damaged shipment, please
+                contact our customer service imediately on
+                customersupport247@babybugexpressllc.com or (706) 452-1324. We
+                will initiate an investigation and work towards a resolution.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingEight">
+              <button
+                class="accordion-button collapsed text-dark"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseEight"
+                aria-expanded="false"
+                aria-controls="collapseEight"
+              >
+                Are there any restricted items that cannot be shipped?
+              </button>
+            </h2>
+            <div
+              id="collapseEight"
+              class="accordion-collapse collapse text-dark text-center"
+              aria-labelledby="headingEight"
+              data-bs-parent="#accordionExample"
+            >
+              <p class="accordion-body my-0">
+                Yes, certain items are restricted due to legal or safety
+                reasons. Please feel free to contact our customer support at
+                customersupport247@babybugexpressllc.com or (706) 452-1324.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <footer></footer>
+      <footer id="contactInfo">
+        <div class="companyInfo">
+          <p>MC# 1517550</p>
+          <p>DOT 4022438</p>
+          <p>6487 Middle Rd, Hope, Michigan 48620</p>
+        </div>
+
+        <div class="websiteInfo">
+          <p>&copy; 2024 Roberta-Claudia Anton</p>
+          <p>All Rights Reserved</p>
+          <p>Bucharest, Romania</p>
+        </div>
+      </footer>
     </main>
   </body>
 
